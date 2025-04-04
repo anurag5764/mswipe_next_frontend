@@ -10,13 +10,13 @@ const bankEMIData = [
     },
     {
         image: "/images/bank-emi/02.svg",
-        title: "Card-based EMI options",
-        description: "Mswipe integrates Bank EMI programs, letting customers pay in installments using their credit or debit cards, making larger purchases easier to manage."
+        title: "Higher payment flexibility",
+        description: "Bank EMI offers flexible payment terms, increasing purchase opportunities for customers and driving more business for banks."
     },
     {
         image: "/images/bank-emi/03.svg",
-        title: "Card-based EMI options",
-        description: "Mswipe integrates Bank EMI programs, letting customers pay in installments using their credit or debit cards, making larger purchases easier to manage."
+        title: "Improved customer experience",
+        description: "Bank EMI enhances customer satisfaction by offering seamless installment options, which helps banks build long-term relationships with their customers."
     },
 
 ]
@@ -28,10 +28,10 @@ const BankEMI = () => {
                     <div className='row'>
                         <div className='col-md-9'>
                             <h2 className='head01'>
-                                <div> <strong>Brand EMI </strong> </div>
+                                <div> <strong>Bank EMI </strong> </div>
                             </h2>
                         </div>
-                        <div className='col-md-3 '>
+                        <div className='col-md-3 d-none d-lg-block'>
                             <Link href="" type="submit" className="btn btn-primary btn-submit d-flex align-items-center justify-content-center w-fit-content">Partner with Mswipe <img src="/images/icons/greater-arrow-right-w.svg" alt="" /></Link>
                         </div>
                     </div>

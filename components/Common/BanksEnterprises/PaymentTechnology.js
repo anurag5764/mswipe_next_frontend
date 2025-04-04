@@ -42,7 +42,12 @@ const PaymentTechnology = () => {
                         </div>
                     </div>
                     <div className='row'>
-                        <div className='col-md-6'>
+                        <div className='col-12'>
+                            <div className='sub-head02'>Merchant Onboarding</div>
+                        </div>
+                    </div>
+                    <div className='row'>
+                        <div className='col-md-6 order-1 order-lg-0'>
                             <Accordion className='accordion-01' defaultActiveKey="0">
                                 {merchantOnboardingData.map((item) => (
                                     <Accordion.Item eventKey={item.key} key={item.key}>
@@ -52,7 +57,7 @@ const PaymentTechnology = () => {
                                 ))}
                             </Accordion>
                         </div>
-                        <div className='col-md-6'>
+                        <div className='col-md-6 order-0 order-lg-1'>
                             <div className='rt-img'>
                                 <Image width={560} height={351} src="/images/merchant-onboarding.png" />
                             </div>

@@ -9,6 +9,8 @@ import ChargeBacks from "../components/Common/BanksEnterprises/ChargeBacks";
 import Integration from "../components/Common/BanksEnterprises/Integration";
 import BrandEMI from "../components/Common/BanksEnterprises/BrandEMI";
 import BankEMI from "../components/Common/BanksEnterprises/BankEMI";
+import TopBanks from "../components/Common/BanksEnterprises/TopBanks";
+import EnsuringComplaince from "../components/home/EnsuringComplaince";
 
 const BanksEnterprisesPage = () => {
     return (
@@ -24,6 +26,8 @@ const BanksEnterprisesPage = () => {
                     <Integration />
                     <BrandEMI />
                     <BankEMI />
+                    <TopBanks />
+                    <EnsuringComplaince />
                 </main>
             </Layout>
         </>

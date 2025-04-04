@@ -31,12 +31,12 @@ const MswipeSwitch = () => {
                 <div> <strong>Mswipe Switch: Smarter, Faster Payments </strong> </div>
               </h2>
             </div>
-            <div className='col-md-3 '>
+            <div className='col-md-3 d-none d-lg-block'>
               <Link href="" type="submit" className="btn btn-primary btn-submit d-flex align-items-center justify-content-center w-fit-content">Partner with Mswipe <img src="/images/icons/greater-arrow-right-w.svg" alt="" /></Link>
             </div>
           </div>
           <div className='row'>
-            <div className='col-lg-7'>
+            <div className='col-lg-6 order-1 order-lg-0'>
 
               <ul className='seamless-lists'>
                 {
@@ -49,7 +49,7 @@ const MswipeSwitch = () => {
                 }
               </ul>
             </div>
-            <div className='col-5 d-none d-lg-block'>
+            <div className='col-lg-6 order-0 order-lg-1 mb-4'>
               <Image className='w-100 h-100' width={555} height={537} src="/images/mswipe-switch.png" />
             </div>
           </div>

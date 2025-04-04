@@ -1500,9 +1500,10 @@ footer .privacy-policy li a {
 }
 .banks-enterprises-section .frontend-card p {
   color: #fafafa;
-  font-size: 0.938vw;
-  line-height: 1.2vw;
   margin-bottom: 2rem;
+}
+.payment-technology-section .accordion-01.accordion{
+  margin-right: 2rem;
 }
 .accordion-01 .accordion-item {
   border: 0;
@@ -1514,6 +1515,12 @@ footer .privacy-policy li a {
 .accordion-01 .accordion-item .accordion-button {
   font-size: 1.146vw;
   font-weight: 500;
+  padding-left: 0;
+  padding-right: 0;
+}
+.accordion-01 .accordion-item .accordion-collapse .accordion-body{
+  padding-left: 0;
+  padding-right: 0;
 }
 .accordion-01 .accordion-item .accordion-button:not(.collapsed) {
   background: transparent;
@@ -1529,6 +1536,7 @@ footer .privacy-policy li a {
   background: url(/images/icons/arrow-down.svg) no-repeat right;
   width: 22px;
   height: 12px;
+  background-size: contain;
 }
 .accordion-01 .accordion-item .accordion-button:not(.collapsed)::after {
   /* background: url(/images/icons/arrow-up.svg) no-repeat right;
@@ -1572,6 +1580,9 @@ footer .privacy-policy li a {
 .charge-backs-section {
   background: #000;
   color: #fff;
+}
+.charge-backs-section .inner-content p{
+  color: #A0A2A3;
 }
 .charge-backs-section .inner-content h3 {
   font-size: 1.25vw;
@@ -1624,6 +1635,28 @@ footer .privacy-policy li a {
   color: #fff;
   font-weight: 500;
 }
+.bank-emi-section{
+  background: #000;
+  color: #fff;
+}
+.sub-head02{
+  font-size: 1.67vw;
+  line-height: 1.67vw;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+.payment-technology-section .rt-img img{
+  width: 100%;
+  height: 100%;
+}
+.charge-backs-section .img img{
+  width: 100%;
+  height: 100%;
+}
+.bank-emi-section .emi-card .img img{
+  width: 100%;
+  height: 100%;
+}
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-nav {
     padding-left: 2rem;
@@ -1633,6 +1666,76 @@ footer .privacy-policy li a {
   }
 }
 @media screen and (max-width: 991px) {
+  .bank-emi-section .emi-card {
+    margin-bottom: 2rem;
+}
+  .bank-emi-section .emi-card .inner .title {
+    font-size: 2.02vw;
+    line-height: 2.02vw;
+}
+  .brand-emi-section .brand-emi-list{
+    border-top: 1px solid #E6E6E6;
+    padding-top: 2rem;
+    margin-top: 2rem;
+  }
+  .brand-emi-section .brand-emi-list:first-child{
+    border-top: 0;
+    padding-top: 0;
+    margin-top: 0;
+  }
+  .brand-emi-section .brand-emi-list .title{
+    font-size: 2.22vw;
+    line-height: 2.22vw;
+    font-weight: 500;
+  }
+  .brand-emi-section .brand-emi-list .img{
+    margin-bottom: 1rem;
+  }
+  .brand-emi-section .brand-emi-list .img img{
+    width: 100%;
+    height: 100%;
+  }
+  .charge-backs-section .img{
+    margin-bottom: 1rem;
+  }
+  .charge-backs-section .inner-content h3 {
+    font-size: 3.42vw;
+    line-height: 3.42vw;
+}
+  .terminal-wrap {
+    padding: 3.083vw 3.667vw 0;
+}
+  .terminal-wrap h3 {
+    font-size: 2.82vw;
+    line-height: 3vw;
+}
+  section {
+    padding: 7vw 0;
+}
+  .accordion-01 .accordion-item .accordion-button::after {
+    width: 18px;
+    height: 8px;
+}
+  .payment-technology-section .accordion-01.accordion {
+    margin-right: 0;
+}
+  .accordion-01 .accordion-item .accordion-button {
+    font-size: 2.22vw;
+}
+  .sub-head02 {
+    font-size: 3.23vw;
+    line-height: 3.23vw;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+  .banks-enterprises-section .frontend-card h3 {
+    font-size: 3.23vw;
+    line-height: 3.23vw;
+}
+  .sub-head01 {
+    font-size: 1.82vw;
+    line-height: 1.82vw;
+}
   .text-card .title {
     font-size: 1.816vw;
   }
@@ -2101,6 +2204,38 @@ footer .privacy-policy li a {
   }
 }
 @media screen and (max-width: 767px) {
+  .bank-emi-section .emi-card .inner .title {
+    font-size: 20px;
+    line-height: 26px;
+}
+  .brand-emi-section .brand-emi-list .title {
+    font-size: 16px;
+    line-height: 23px;
+}
+  .charge-backs-section .inner-content h3 {
+    font-size: 18px;
+    line-height: 23px;
+}
+  .terminal-wrap h3 {
+    font-size: 18px;
+    line-height: 23px;
+}
+  .accordion-01 .accordion-item .accordion-button {
+    font-size: 16px;
+}
+  .sub-head02 {
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 1rem;
+}
+  .sub-head01 {
+    font-size: 16px;
+    line-height: 18px;
+}
+  .banks-enterprises-section .frontend-card h3 {
+    font-size: 18px;
+    line-height: 20px;
+}
   .text-card .title {
     font-size: 18px;
   }
@@ -2295,7 +2430,7 @@ footer .privacy-policy li a {
   .head01 {
     font-size: 24px;
     line-height: 30px;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
   .head03 {
     font-size: 24px;

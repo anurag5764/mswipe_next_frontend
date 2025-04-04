@@ -14,7 +14,7 @@ const ChargeBacks = () => {
                     </div>
                     <div className='row align-items-center mb-4'>
                         <div className='col-md-6'>
-                            <Image width={600} height={321} src="/images/chargebacks/01.svg" />
+                            <div className='img'><Image width={600} height={321} src="/images/chargebacks/01.svg" /></div>
                         </div>
                         <div className='col-md-6'>
                             <div className='inner-content'>
@@ -25,19 +25,19 @@ const ChargeBacks = () => {
                     </div>
                     <div className='row align-items-center mb-4'>
                        
-                        <div className='col-md-6'>
+                        <div className='col-md-6 order-1 order-lg-0'>
                             <div className='inner-content'>
                                 <h3>Real-time chargeback tracking</h3>
                                 <p className='fs-18'>Mswipe’s chargeback tracking is available in real-time via the merchant app and portal, allowing merchants to monitor and respond to disputes with ease.</p>
                             </div>
                         </div>
-                        <div className='col-md-6'>
-                            <Image width={600} height={321} src="/images/chargebacks/02.svg" />
+                        <div className='col-md-6 order-0 order-lg-1'>
+                            <div className='img'><Image width={600} height={321} src="/images/chargebacks/02.svg" /></div>
                         </div>
                     </div>
                     <div className='row align-items-center mb-4'>
                         <div className='col-md-6'>
-                            <Image width={600} height={321} src="/images/chargebacks/03.svg" />
+                            <div className='img'><Image width={600} height={321} src="/images/chargebacks/03.svg" /></div>
                         </div>
                         <div className='col-md-6'>
                             <div className='inner-content'>

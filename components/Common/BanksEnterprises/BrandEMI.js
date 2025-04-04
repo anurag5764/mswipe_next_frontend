@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react'
 import { Accordion } from 'react-bootstrap'
@@ -8,17 +9,17 @@ const BrandEMI = () => {
     <>
       <section className='brand-emi-section'>
         <div className='container'>
-          <div className='row'>
+          <div className='row text-center text-lg-left'>
             <div className='col-md-9'>
               <h2 className='head01'>
                 <div> <strong>Brand EMI </strong> </div>
               </h2>
             </div>
-            <div className='col-md-3 '>
+            <div className='col-md-3 d-none d-lg-block'>
               <Link href="" type="submit" className="btn btn-primary btn-submit d-flex align-items-center justify-content-center w-fit-content">Partner with Mswipe <img src="/images/icons/greater-arrow-right-w.svg" alt="" /></Link>
             </div>
           </div>
-          <div className="row sp-bg">
+          <div className="row sp-bg d-none d-lg-flex">
             <div className="col-lg-6">
               <Accordion className='accordion-02' defaultActiveKey="0">
                 <Accordion.Item eventKey="0" onClick={() => {
@@ -47,6 +48,31 @@ const BrandEMI = () => {
                 <div id="banner" className="sp-banner">
                   <img className="img-fluid" src={image} alt="" />
                 </div>
+              </div>
+            </div>
+          </div>
+          <div className='row sp-bg d-block d-lg-none'>
+            <div className='col-12'>
+              <div className='brand-emi-list'>
+                <div className='img'>
+                  <Image width={335} height={240} src="/images/brand-emi/01.svg" />
+                </div>
+                <div className='title'>Tailored installment solutions</div>
+                <div className='description'>Brand EMI feature enables merchants to offer customised installment plans on specific brands, making premium products more affordable for customers.</div>
+              </div>
+              <div className='brand-emi-list'>
+                <div className='img'>
+                  <Image width={335} height={240} src="/images/brand-emi/01.svg" />
+                </div>
+                <div className='title'>Tailored installment solutions</div>
+                <div className='description'>Brand EMI feature enables merchants to offer customised installment plans on specific brands, making premium products more affordable for customers.</div>
+              </div>
+              <div className='brand-emi-list'>
+                <div className='img'>
+                  <Image width={335} height={240} src="/images/brand-emi/01.svg" />
+                </div>
+                <div className='title'>Tailored installment solutions</div>
+                <div className='description'>Brand EMI feature enables merchants to offer customised installment plans on specific brands, making premium products more affordable for customers.</div>
               </div>
             </div>
           </div>

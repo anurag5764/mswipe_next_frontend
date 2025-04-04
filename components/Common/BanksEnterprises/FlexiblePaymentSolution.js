@@ -48,7 +48,9 @@ const FlexiblePaymentSolution = () => {
                             <div className='sub-head01'>
                                 <Image className='me-1' width={24} height={24} src="/images/icons/tech.svg" />    FRONT-END
                             </div>
+                            
                             <h2 className='head01'><strong>Flexible payment solutions</strong> for your customers</h2>
+                            <div className='mb-3 mb-lg-0 d-block d-lg-none'>Easily integrate with your app or website using our low-code integration or ready-to-use SDKs and plugins, available in all major programming languages.</div>
                             <div className="mb-4 d-flex align-items-center">
                                 <Link href="#" type="submit" class="btn btn-primary btn-submit">Partner with Mswipe<img src="/images/icons/greater-arrow-right-w.svg" alt="" /></Link>
                             </div>
@@ -99,7 +101,7 @@ const FlexiblePaymentSolution = () => {
                                                         <h3 className="">
                                                             {item.title}
                                                         </h3>
-                                                        <p className="">
+                                                        <p className="fs-18">
                                                             {item.description}
                                                         </p>
                                                         <div>

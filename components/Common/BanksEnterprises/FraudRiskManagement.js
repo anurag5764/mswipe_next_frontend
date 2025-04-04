@@ -9,7 +9,7 @@ const FraudRiskManagement = () => {
                 <div className='container'>
                     <div className='row text-center'>
                         <div className='col-12'>
-                            <h2 className='head01'><strong>Fraud Risk Management: </strong>Merchant and transaction risk</h2>
+                            <h2 className='head01'>Fraud Risk Management: Merchant and transaction risk</h2>
                         </div>
                     </div>
                     <div className='row'>
