@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 14" width="20" height="14">
+	<title>india</title>
+	<defs>
+		<image  width="20" height="10" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAMAAACDi47UAAAAAXNSR0IB2cksfwAAAGZQTFRF/gAAgzgYAnIwAHMwQFYkhDgYA3MwAXQxQFck4GtjwNvKwNzMz6WZ/3x8//39/////7+/+XZ28/Hx8/Pz9ra2tTIyaGZmZ2dnjU1NgwAAAgAAAAAAQAAA/gAAnCQPAl0nAF0nM0ofLfe8jwAAACJ0Uk5T//////////////////////////////////////+ZmZmZmfPBuRAAAAA9SURBVHicY2QAAkZGRgYEYPzDiFOQFVXwB5jHiSr4BczjRRX8AOYJogq+AfNEUQVfgHmSqIJPsAvKYnEnAMrICiiTdIf+AAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+	</style>
+	<use id="uae" href="#img1" x="0" y="2"/>
+</svg>
