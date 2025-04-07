@@ -158,6 +158,8 @@ button {
 }
 header {
   font-size: 0.729vw;
+  position: relative;
+  z-index: 999;
 }
 header .navbar.bg-light {
   background: #232324 !important;
@@ -368,6 +370,7 @@ section {
   font-size: 1.875vw;
   line-height: 2vw;
   margin-bottom: 3rem;
+  font-weight: 500;
 }
 .head02 {
   font-size: 1.667vw;
@@ -1141,11 +1144,11 @@ footer .privacy-policy li a {
 }
 .faq-container > ul.question-lists .answer-section .back-button {
   position: absolute;
-  top: 0;
+  top: -66px;
   right: 0;
   background: transparent;
-  color: #fff;
-  border: 1px solid #fff;
+  color: #00BDFF;
+  border: 1px solid #00BDFF;
   border-radius: 10px;
   padding: 0.5rem 1rem;
   display: flex;
@@ -1265,7 +1268,7 @@ footer .privacy-policy li a {
 .faq-container > ul.question-lists li .faq-question {
   padding-right: 3rem;
 }
-.select-language img {
+header .select-language .dropdownItem  img {
   filter: invert();
 }
 .advaced-specifications-section .container {
@@ -1307,7 +1310,7 @@ footer .privacy-policy li a {
 }
 .lists-items .item .title {
   font-size: 1.042vw;
-  line-height: 1.042vw;
+  line-height: 1.342vw;
   font-weight: 500;
   color: #000;
   margin: 1rem 0 0.5rem 0;
@@ -1502,7 +1505,7 @@ footer .privacy-policy li a {
   color: #fafafa;
   margin-bottom: 2rem;
 }
-.payment-technology-section .accordion-01.accordion{
+.payment-technology-section .accordion-01.accordion {
   margin-right: 2rem;
 }
 .accordion-01 .accordion-item {
@@ -1518,7 +1521,7 @@ footer .privacy-policy li a {
   padding-left: 0;
   padding-right: 0;
 }
-.accordion-01 .accordion-item .accordion-collapse .accordion-body{
+.accordion-01 .accordion-item .accordion-collapse .accordion-body {
   padding-left: 0;
   padding-right: 0;
 }
@@ -1581,8 +1584,8 @@ footer .privacy-policy li a {
   background: #000;
   color: #fff;
 }
-.charge-backs-section .inner-content p{
-  color: #A0A2A3;
+.charge-backs-section .inner-content p {
+  color: #a0a2a3;
 }
 .charge-backs-section .inner-content h3 {
   font-size: 1.25vw;
@@ -1625,37 +1628,150 @@ footer .privacy-policy li a {
   background: #1b1b1b;
   color: #a0a2a3;
 }
-.bank-emi-section .emi-card .inner{
+.bank-emi-section .emi-card .inner {
   padding: 1.56vw;
 }
-.bank-emi-section .emi-card .inner .title{
+.bank-emi-section .emi-card .inner .title {
   font-size: 1.04vw;
   line-height: 1.04vw;
   margin-bottom: 0.52vw;
   color: #fff;
   font-weight: 500;
 }
-.bank-emi-section{
+.bank-emi-section {
   background: #000;
   color: #fff;
 }
-.sub-head02{
+.sub-head02 {
   font-size: 1.67vw;
   line-height: 1.67vw;
   font-weight: 500;
   margin-bottom: 1.5rem;
 }
-.payment-technology-section .rt-img img{
+.payment-technology-section .rt-img img {
   width: 100%;
   height: 100%;
 }
-.charge-backs-section .img img{
+.charge-backs-section .img img {
   width: 100%;
   height: 100%;
 }
-.bank-emi-section .emi-card .img img{
+.bank-emi-section .emi-card .img img {
   width: 100%;
   height: 100%;
+}
+.benefits-section {
+  background: #000;
+  color: #a0a2a3;
+}
+.tabs-02.tabs-02-abs .nav-tabs {
+  width: 25%;
+  position: relative;
+  right: inherit;
+  top: inherit;
+  margin: 0 auto;
+}
+.head01.grd-bg {
+  background: -webkit-linear-gradient(45deg, #fff, #000 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.benefits-section .tabs-02 .nav-justified .nav-item .nav-link {
+  color: #6b7588;
+  border: 1px solid rgba(246, 248, 248, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+}
+.benefits-section .tabs-02 .nav-tabs .nav-link.active {
+  border: 1px solid #03b1e4;
+  background: #fff;
+  font-weight: 500;
+}
+.benefits-section .tabs-02 .tab-content {
+  margin-top: 3rem;
+}
+.benefits-section .seamless-lists {
+  list-style: disc;
+}
+.benefits-section .seamless-lists li {
+  border-bottom: 1px solid #383838;
+  padding-bottom: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+.benefits-section .seamless-lists li:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.accordion-03 .accordion-item .accordion-button {
+  font-size: 0.94vw;
+  font-weight: 500;
+}
+.accordion-03 .accordion-item .accordion-button:not(.collapsed) {
+  background: #121212;
+  color: #fff;
+  background-image: linear-gradient(141deg, #096789 0%, #121212 14%);
+  border-radius: 8px 8px 0 0;
+}
+.accordion-03 .accordion-item .accordion-collapse{
+  background: #121212;
+  color: #A0A2A3;
+  border-radius: 0 0 8px 8px ;
+}
+.accordion-03 .accordion-item .accordion-button,
+.accordion-03 .accordion-item .accordion-collapse {
+  border-radius: 0;
+}
+.accordion-03 .accordion-item .accordion-collapse {
+  color: #707070;
+  overflow: hidden;
+  border-radius: 0 0 8px 8px;
+}
+.accordion-03 .accordion-item .accordion-button::after {
+  background: none;
+}
+.accordion-03 .accordion-item .accordion-header .number {
+  width: 24px;
+  height: 24px;
+  background: #43baf9;
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  margin-right: 0.5rem;
+}
+.accordion-03 .accordion-item {
+  border-radius: 8px;
+  border: 1px solid rgba(34, 34, 34, 0.1);
+  background: #fff;
+  margin-bottom: 2rem;
+  padding: 0.1rem;
+}
+.accordion-03 .accordion-item .progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #e5e7eb;
+  overflow: hidden;
+}
+.accordion-03 .accordion-item .accordion-body{
+    position: relative;
+    padding: 0rem 1rem 1rem 3.4rem;
+}
+.accordion-03 .progress-bar {
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: #00BDFF;
+  height: 4px;
+  font-size: 0;
+}
+.accordion-03 .accordion-item .accordion-button:not(.collapsed:focus){
+  outline: none;
+  box-shadow: none;
 }
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-nav {
@@ -1666,76 +1782,85 @@ footer .privacy-policy li a {
   }
 }
 @media screen and (max-width: 991px) {
+ .advaced-specifications-section .lists-items {
+    margin: 0rem 0;
+}
+  .accordion-03 .accordion-item .accordion-button {
+    font-size: 1.82vw;
+}
+  .tabs-02.tabs-02-abs .nav-tabs {
+    width: 40%;
+}
   .bank-emi-section .emi-card {
     margin-bottom: 2rem;
-}
+  }
   .bank-emi-section .emi-card .inner .title {
     font-size: 2.02vw;
     line-height: 2.02vw;
-}
-  .brand-emi-section .brand-emi-list{
-    border-top: 1px solid #E6E6E6;
+  }
+  .brand-emi-section .brand-emi-list {
+    border-top: 1px solid #e6e6e6;
     padding-top: 2rem;
     margin-top: 2rem;
   }
-  .brand-emi-section .brand-emi-list:first-child{
+  .brand-emi-section .brand-emi-list:first-child {
     border-top: 0;
     padding-top: 0;
     margin-top: 0;
   }
-  .brand-emi-section .brand-emi-list .title{
+  .brand-emi-section .brand-emi-list .title {
     font-size: 2.22vw;
     line-height: 2.22vw;
     font-weight: 500;
   }
-  .brand-emi-section .brand-emi-list .img{
+  .brand-emi-section .brand-emi-list .img {
     margin-bottom: 1rem;
   }
-  .brand-emi-section .brand-emi-list .img img{
+  .brand-emi-section .brand-emi-list .img img {
     width: 100%;
     height: 100%;
   }
-  .charge-backs-section .img{
+  .charge-backs-section .img {
     margin-bottom: 1rem;
   }
   .charge-backs-section .inner-content h3 {
     font-size: 3.42vw;
     line-height: 3.42vw;
-}
+  }
   .terminal-wrap {
     padding: 3.083vw 3.667vw 0;
-}
+  }
   .terminal-wrap h3 {
     font-size: 2.82vw;
     line-height: 3vw;
-}
+  }
   section {
     padding: 7vw 0;
-}
+  }
   .accordion-01 .accordion-item .accordion-button::after {
     width: 18px;
     height: 8px;
-}
+  }
   .payment-technology-section .accordion-01.accordion {
     margin-right: 0;
-}
+  }
   .accordion-01 .accordion-item .accordion-button {
     font-size: 2.22vw;
-}
+  }
   .sub-head02 {
     font-size: 3.23vw;
     line-height: 3.23vw;
     margin-bottom: 1rem;
     text-align: center;
-}
+  }
   .banks-enterprises-section .frontend-card h3 {
     font-size: 3.23vw;
     line-height: 3.23vw;
-}
+  }
   .sub-head01 {
     font-size: 1.82vw;
     line-height: 1.82vw;
-}
+  }
   .text-card .title {
     font-size: 1.816vw;
   }
@@ -2020,6 +2145,8 @@ footer .privacy-policy li a {
     overflow: hidden;
     overflow-y: scroll;
     height: 65vh;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
   }
   .header_wrap.stick .navbar {
     padding: 0;
@@ -2204,38 +2331,44 @@ footer .privacy-policy li a {
   }
 }
 @media screen and (max-width: 767px) {
+  .accordion-03 .accordion-item .accordion-button {
+    font-size: 16px;
+}
+  .tabs-02.tabs-02-abs .nav-tabs {
+    width: 90%;
+}
   .bank-emi-section .emi-card .inner .title {
     font-size: 20px;
     line-height: 26px;
-}
+  }
   .brand-emi-section .brand-emi-list .title {
     font-size: 16px;
     line-height: 23px;
-}
+  }
   .charge-backs-section .inner-content h3 {
     font-size: 18px;
     line-height: 23px;
-}
+  }
   .terminal-wrap h3 {
     font-size: 18px;
     line-height: 23px;
-}
+  }
   .accordion-01 .accordion-item .accordion-button {
     font-size: 16px;
-}
+  }
   .sub-head02 {
     font-size: 20px;
     line-height: 23px;
     margin-bottom: 1rem;
-}
+  }
   .sub-head01 {
     font-size: 16px;
     line-height: 18px;
-}
+  }
   .banks-enterprises-section .frontend-card h3 {
     font-size: 18px;
     line-height: 20px;
-}
+  }
   .text-card .title {
     font-size: 18px;
   }
@@ -2294,7 +2427,7 @@ footer .privacy-policy li a {
     line-height: 30px;
   }
   .banner-content {
-    margin-top: -7rem;
+    /* margin-top: -7rem; */
   }
   .inner_banner {
     margin-top: -7rem;
