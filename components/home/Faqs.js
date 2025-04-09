@@ -218,8 +218,8 @@ const Faqs = () => {
                 className="icon"
                 src="/images/icons/search-faq-icon.svg"
                 alt=""
-                width={16}
-                height={16}
+                width={40}
+                height={40}
               />
             </div>
           </div>
