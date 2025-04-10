@@ -3035,7 +3035,8 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  background-color: #1a1a1a; /* In case the GIF doesn't load */
+  background-color: #1a1a1a; 
+  z-index: 10;/* In case the GIF doesn't load */
 }
 
 /* Dot patterns */
@@ -3050,7 +3051,7 @@ body {
   width: 69.71px;
   height: 75.13px;
   top: 106.12px;
-  background-image: url(/images/payment-gateways/Vector.svg);
+  
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -3060,7 +3061,7 @@ body {
   height: 75.13px;
   top: 279.62px;
   left: 240.5px;
-  background-image: url(/images/payment-gateways/Vector.svg);
+  
   background-size: contain;
   background-repeat: no-repeat;
   transform: rotate(180deg);
@@ -3075,7 +3076,8 @@ body {
   left: 48.02px;
   border-radius: 6.2px;
   z-index: 1;
-  background-color: #45a0f5;
+  background-repeat: no-repeat;
+    
 }
 
 /* UPI Card overlay */
@@ -3087,7 +3089,7 @@ top: 149.49px;
 left: 228.5px;
 
   z-index: 10;
-  background-image: url('/images/payment-gateways/image.svg');
+  
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -3144,8 +3146,28 @@ left: 228.5px;
   letter-spacing: 0%;
 }
 
+.button-div{
+  
+}
+
+.button-second{
+  display: none;
+
+}
+.button-second span{
+  color: white;
+  width: 61px;
+  height: 25px;
+  
+  font-family: Roboto;
+font-weight: 500;
+font-size: 18px;
+line-height: 140%;
+letter-spacing: 0%;
+}
+
 .payment-button {
-  background-color: #45a0f5;
+  background-color: #03B1E4;
   color: white;
   font-weight: 600;
   padding: 12px 32px;
@@ -3187,6 +3209,14 @@ left: 228.5px;
   .dot-pattern-top-left {
     top: 100px;
     left: -20px;
+  }
+  .button-div{
+    display: flex;
+            width: 405px;
+            height: 50px;
+            top: 438px;
+            left: 120px;
+            gap: 16px;
   }
   
   .dot-pattern-bottom-right {
@@ -3241,7 +3271,11 @@ left: 228.5px;
   
   .payment-button {
     width: auto;
-    padding: 14px 40px;
+    padding: 12.5px 24px;
+  }
+  .payment-button span{
+    width: 181px;
+    height: 25px;
   }
   
   /* Exact positioning as per Figma specs */
@@ -3299,7 +3333,8 @@ left: 228.5px;
     left: 950px;
     border-radius: 8px;
     z-index: 1;
-    background-color: #45a0f5;
+    background-repeat: no-repeat;
+    
   }
   
   /* Adjusted UPI overlay */
@@ -3318,6 +3353,20 @@ left: 228.5px;
   .payment-wrapper {
     max-width: 1440px;
     position: relative;
+  }
+
+  .button-second{
+    gap: 6px;
+border-radius: 8px;
+padding-top: 12.5px;
+padding-right: 24px;
+padding-bottom: 12.5px;
+padding-left: 24px;
+border-width: 1px;
+background-color: black;
+display: flex;
+align-items: center;
+border: 1px solid var(--colors-blue-blue-500-m, #03B1E4)
   }
   
   /* For 1440px width screen, use absolute positioning as in the design */
@@ -3888,4 +3937,207 @@ left: 113px;
 
   }
 
+}
+
+.paybylinkIcons {
+  position: absolute;
+  z-index: 5;
+  width: 273.23px;
+  height: 45.7px;
+  top: 328.45px;
+  left: 37.96px;
+  border-radius: 7px;
+  background-color: #000000;
+}
+
+/* Desktop styles - override the base styles for larger screens */
+@media (min-width: 768px) {
+  .paybylinkIcons {
+    width: 354px;
+    height: 56px;
+    top: 490px;
+    left: 970px;
+    border-radius: 10px;
+  }
+}
+
+.paybylinkoverlay{
+  position: absolute;
+  background-color:#0D0E15;
+  z-index: 3;
+  width: 118.52112579345703px;
+  height: 110px;
+  top: 75.92px;
+  border-radius: 7.75px;
+  
+}
+
+.paybylinkBluedot{
+  width: 69.71830749511719px;
+height: 75.1408462524414px;
+transform: rotate(-180deg);
+
+top: 144.86px;
+left: 42.7px;
+
+}
+@media (min-width: 768px) {
+  .paybylinkBluedot{
+    width: 90px;
+    height: 97px;
+    
+    opacity: 1;
+    top: 253px;
+    left: 966px;
+  
+  }
+}
+
+@media (min-width: 768px) {
+  .paybylinkoverlay{
+    position: absolute;
+    background-color:#0D0E15;
+    z-index: 3;
+    width: 153px;
+  height: 142px;
+  top: 154px;
+  left: 910px;
+  }
+  
+}
+
+/* PaybyLink benefittomerchant css*/
+/* BenefitsToMerchants.module.css */
+/* BenefitsToMerchants.css */
+
+.benefits-container {
+  padding: 40px 20px;
+  max-width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+.header-section {
+  text-align: center;
+  padding: 20px 0 40px;
+  margin-bottom: 30px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 600;
+  color: #333;
+}
+
+.benefits-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin: auto;
+  margin-bottom: 40px;
+  max-width: 100%;
+}
+
+.benefit-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 282px;
+  margin: 0 auto;
+}
+
+.card-image-container {
+  width: 100%;
+  height: 293px;
+  border-radius: 12px 12px 0 0;
+  overflow: hidden;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.card-description {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #666;
+}
+
+/* Sign Up Button */
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.signup-button {
+  background-color: #03B1E4;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.signup-button:hover {
+  background-color: #1976D2;
+}
+
+/* Responsive Design for desktop */
+@media (min-width: 1024px) {
+  .benefits-container {
+    padding: 80px 120px;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .benefits-grid {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+
+  .benefit-card {
+    flex: 0 0 calc(25% - 24px);
+    max-width: 282px;
+    margin: 0;
+  }
+}
+
+/* For tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .benefits-container {
+    padding: 60px 60px;
+  }
+
+  .benefits-grid {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .benefit-card {
+    flex: 0 0 calc(50% - 12px);
+    max-width: 282px;
+  }
 }

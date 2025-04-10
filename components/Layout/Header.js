@@ -69,7 +69,7 @@ const menuData = [
               {
                 image: "/images/online-solutions/Pay by link.png",
                 name: "Simplify payments with Mswipe Pay by Link.",
-                link: "/#"
+                link: "/pay-by-link"
               }
             ]
           }

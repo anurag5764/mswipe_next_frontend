@@ -26,11 +26,11 @@ const Hero = props => {
         <div className="phone-section">
           {/* Phone mockup container */}
           <div className="phone-container">
-            <img src={images?.phoneMockup || "/images/payment-gateways/Nothing Phone (1) 1.svg"} alt="Mobile phone mockup" className="phone-mockup" />
+            <img src={images?.phoneMockup} alt="Mobile phone mockup" className="phone-mockup" />
 
             {/* GIF that will play in the phone screen */}
             <div ref={phoneRef} className="phone-screen">
-              <img src={images?.paymentDemo || "/images/payment-gateways/payment.gif"} alt="Payment demonstration" className="payment-demo-gif" />
+              <img src={images?.paymentDemo} alt="Payment demonstration" className="payment-demo-gif" />
             </div>
           </div>
         </div>
@@ -44,23 +44,25 @@ const Hero = props => {
             <span className="gateway">{safeContent?.highlight}</span>
           </h2>
           <p className="payment-description">{safeContent?.description}</p>
-          <button className="payment-button">
-            {safeContent?.buttonText}
-            <svg xmlns="http://www.w3.org/2000/svg" className="button-icon" viewBox="0 0 20 20" fill="currentColor">
-              <path
-                fillRule="evenodd"
-                d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
-                clipRule="evenodd"
-              />
-            </svg>
-          </button>
+          <div className="button-div">
+            <button className="payment-button">
+              <span>{safeContent?.buttonText}</span>
+              <img className="button-icon" src="/images/paybylink/Arrow.svg" alt="arrow" />
+            </button>
+            {herocontent.signup && (
+              <button className="button-second">
+                <span>Sign up </span>
+                <img className="button-icon" src="/images/paybylink/Arrow.svg" alt="arrow" />
+              </button>
+            )}
+          </div>
         </div>
 
         {/* Decorative elements positioned absolutely */}
-        <div className="blue-rectangle"></div>
-        <div className="dot-pattern dot-pattern-top-left"></div>
-        <div className="dot-pattern dot-pattern-bottom-right"></div>
-        <div className="upi-overlay"></div>
+        <img className={images.blueRectangle.className} src={images.blueRectangle.link} />
+        <img className={images.dotPattern.className} src={images.dotPattern.link} />
+        <img className="dot-pattern dot-pattern-bottom-right" src={images.dotPattern.link} />
+        <img className={images.upiOverlay.className} src={images.upiOverlay.link} />
       </div>
     </div>
   );

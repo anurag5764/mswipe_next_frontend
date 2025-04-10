@@ -13,7 +13,7 @@ import EnsuringComplaince from "../components/home/EnsuringComplaince";
 import BenefitOfMerchantaPortal from "../components/Common/MerchantApp/BenefitOfMerchantaPortal";
 
 const acordianData = {
-  prefix: "Benefit to ",
+  title: "Benefit to ",
   emphasized: "merchants",
   data: [
     {
@@ -96,14 +96,15 @@ const Payment = () => {
     emphasis: "Mswipe Payment ",
     highlight: "Gateway",
     description: "Easily integrate with your app or website using our low-code integration or ready-to-use SDKs and plugins, available in all major programming languages.",
-    buttonText: "Get it now"
+    buttonText: "Get it now",
+    signup: false
   };
   const images = {
     phoneMockup: "/images/payment-gateways/Nothing Phone (1) 1.svg",
     paymentDemo: "/images/payment-gateways/payment.gif",
-    // Additional images that might be needed for decorative elements
-    dotPattern: "/images/payment-gateways/dot-pattern.svg",
-    upiOverlay: "/images/payment-gateways/upi-overlay.svg"
+    blueRectangle: { link: "/images/payment-gateways/Rectangle 34624504.png", className: "blue-rectangle" },
+    dotPattern: { link: "/images/payment-gateways/Vector.svg", className: "dot-pattern dot-pattern-top-left" },
+    upiOverlay: { link: "/images/payment-gateways/image.svg", className: "upi-overlay" }
   };
 
   return (
