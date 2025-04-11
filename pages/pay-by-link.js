@@ -8,6 +8,7 @@ import SeamlessPayment from "../components/home/SeamlessPayment";
 import Hero from "../components/PaymentGateway/Hero";
 import AcceptAllPayments from "../components/Common/InStoreSolution/AcceptAllPayments";
 import BenefitsToMerchants from "../components/PayByLink/BenefitToMerchant";
+import PaymentFeaturesComponent from "../components/PayByLink/PaymentFeatures";
 const images = {
   phoneMockup: "/images/payment-gateways/Nothing Phone (1) 1.svg",
   paymentDemo: "/images/paybylink/pay-by-link.gif",
@@ -61,6 +62,7 @@ const payByLink = () => {
   return (
     <Layout>
       <Hero images={images} herocontent={herocontent} />
+      <PaymentFeaturesComponent />
       <BenefitsToMerchants />
       <AcceptAllPayments slidesData={slidesData} />
       <HowItWorks />
