@@ -4419,3 +4419,165 @@ left: 42.7px;
     width: fit-content;
   }
 }
+
+/* Terms and Conditions Header Styles */
+/* Terms Header Styles */
+.terms-header {
+  width: 100%;
+  max-width: 1440px;
+  height: 170px;
+  padding: 57px 120px;
+  background: #0D0E15;
+  display: flex;
+  
+  align-items: center;
+  gap: 8px;
+  margin: 0 auto;
+}
+
+.terms-title {
+  
+  height: 56px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 140%;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  background: linear-gradient(89.17deg, #FFFFFF 3.05%, #FFFFFF 34.75%, rgba(255, 255, 255, 0) 147.12%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+/* Terms Content Styles */
+.terms-content {
+  width: 1200px;
+  height: auto;
+  min-height: 1488px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin: 0 auto;
+  padding: 40px 0;
+  background-color: #fff;
+}
+
+.terms-intro-text {
+  width: 1200px;
+  height: auto;
+  min-height: 88px;
+  gap: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0%;
+  color: #60757A;
+  margin-bottom: 12px;
+}
+
+.terms-section-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+  
+}
+
+.terms-definitions {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.terms-definitions strong{
+  font-family: 'Roboto',sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0%;
+  color: black;
+}
+
+.definition-item {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #60757A;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .terms-header {
+    height: auto;
+    min-height: 100px;
+    padding: 33px 20px;
+    width: 100%;
+  }
+  
+  .terms-title {
+   
+    height: auto;
+    font-size: 24px;
+    line-height: 140%;
+    text-align: center;
+  }
+  
+  .terms-content {
+    position: relative;
+    width: 100%;
+    max-width: 335px;
+    height: auto;
+    min-height: 3490px;
+    
+    margin: 0 auto;
+    gap: 32px;
+    overflow-x: hidden;
+    background-color: #fff;
+    z-index: 10;
+  }
+  
+  .terms-intro-text {
+    width: 100%;
+    max-width: 335px;
+    height: auto;
+    min-height: 264px;
+    gap: 20px;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .definition-item {
+    width: 100%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+    padding-right: 0;
+    background-color: #fff;
+  }
+  
+  .terms-section-title {
+    
+    width: 100%;
+  }
+  
+  .terms-definitions {
+    
+    width: 100%;
+  }
+  
+  /* Fix for navigation elements */
+  .product-listing,
+  .footer-navigation,
+  nav.mobile-nav {
+    position: relative;
+    z-index: 5;
+    margin-top: 40px;
+    clear: both;
+    width: 100%;
+    border-top: 1px solid #eee;
+  }
+}
